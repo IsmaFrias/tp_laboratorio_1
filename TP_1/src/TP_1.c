@@ -1,10 +1,8 @@
 /*
  ============================================================================
- Name        :
- Author      : 
- Version     :
- Copyright   :
- Description :
+ Nombre      : Ismael Alejandro Frias
+ Dividion    : Div B
+ Nro de TP   : Trabajo Prctico Nro 1
  ============================================================================
  */
 
@@ -16,7 +14,7 @@
 int main(void) {
 	setbuf(stdout, NULL);
 
-	int opciones; // \brief variable,  para la elección de opcines
+	int opciones; // \brief variable,  para la elecciï¿½n de opcines
 	float km; // \brief variable flotante, para almacenar los Kilometros
 	float y; // \brief variable flotante, para almacenar el precio de Aerolineas
 	float z; // \brief variable flotante, para almacenar el precio de Latam
@@ -32,14 +30,14 @@ int main(void) {
 
 	float diferenciaPrecio; // \brief variable flotante, para almacenar la diferencia de precio entre Aerolineas y Latam
 
-	km = 0; // Inicialización kilometros
-	y = 0; // Inicialización precio Aerolineas
-	z = 0; // Inicialización precio Latam
-	precioTarjDebAerolineas = 0; // Inicialización para poder validar el case 4
+	km = 0; // Inicializaciï¿½n kilometros
+	y = 0; // Inicializaciï¿½n precio Aerolineas
+	z = 0; // Inicializaciï¿½n precio Latam
+	precioTarjDebAerolineas = 0; // Inicializaciï¿½n para poder validar el case 4
 
 			do{
-				printf("1)Ingresar Kilómetros: (km = %.2f)", km);
-				printf("\n2)Ingresar precio de vuelos: (Aerolíneas = %.2f, Latam = %.2f)", y, z);
+				printf("1)Ingresar Kilï¿½metros: (km = %.2f)", km);
+				printf("\n2)Ingresar precio de vuelos: (Aerolï¿½neas = %.2f, Latam = %.2f)", y, z);
 				printf("\n3)Calcular todos los costos.");
 				printf("\n4)Informar Resultados.");
 				printf("\n5)Carga forzada de datos.");
@@ -56,7 +54,7 @@ int main(void) {
 
 					case 2:
 						printf("Ingresar Precio de Vuelos:\n");
-						y = pedirUnNumero("- Precio vuelo Aerolíneas: ");
+						y = pedirUnNumero("- Precio vuelo Aerolï¿½neas: ");
 						z = pedirUnNumero("- Precio vuelo Latam: ");
 						printf("\n\n\n\n\n");
 						break;
@@ -68,7 +66,7 @@ int main(void) {
 							printf("\n\n\n\n\n");
 						}
 						else if(y == 0 && z == 0){
-							printf("No se introdujo ningún precio en Aerolineas Arg. y Latam\n");
+							printf("No se introdujo ningï¿½n precio en Aerolineas Arg. y Latam\n");
 							system("pause");
 							printf("\n\n\n\n\n");
 						}
@@ -94,7 +92,7 @@ int main(void) {
 
 					case 4:
 						if (km == 0 && y == 0 && z == 0){
-							printf("No se introdujo ningún valor\n");
+							printf("No se introdujo ningï¿½n valor\n");
 							system("pause");
 							printf("\n\n\n\n\n");
 						}
@@ -104,15 +102,15 @@ int main(void) {
 							printf("\n\n\n\n\n");
 						}
 						else{
-						printf("\nAerolíneas: %.2f", y);
-						printf("\na) Precio con tarjeta de débito: %.2f", precioTarjDebAerolineas);
-						printf("\nb) Precio con tarjeta de crédito: %.2f", precioTarjCredAerolineas);
+						printf("\nAerolï¿½neas: %.2f", y);
+						printf("\na) Precio con tarjeta de dï¿½bito: %.2f", precioTarjDebAerolineas);
+						printf("\nb) Precio con tarjeta de crï¿½dito: %.2f", precioTarjCredAerolineas);
 						printf("\nc) Precio pagando con bitcoin : %f", precioBTCaerolineas);
 						printf("\nd) Precio unitario: %.2f", precioUnitarioAerolineas);
 
 						printf("\n\nLatam: %.2f", z);
-						printf("\na) Precio con tarjeta de débito: %.2f", precioTarjDebLatam);
-						printf("\nb) Precio con tarjeta de crédito: %.2f", precioTarjCredLatam);
+						printf("\na) Precio con tarjeta de dï¿½bito: %.2f", precioTarjDebLatam);
+						printf("\nb) Precio con tarjeta de crï¿½dito: %.2f", precioTarjCredLatam);
 						printf("\nc) Precio pagando con bitcoin : %f", precioBTClatam);
 						printf("\nd) Precio unitario: %.2f\n", precioUnitarioLatam);
 						printf("\nLa diferencia es: %.2f\n", diferenciaPrecio);
@@ -141,15 +139,15 @@ int main(void) {
 
 						diferenciaPrecio = DiferenciaDePrecio(z, y);
 
-						printf("Aerolíneas: %.2f", y);
-						printf("\na) Precio con tarjeta de débito: %.2f", precioTarjDebAerolineas);
-						printf("\nb) Precio con tarjeta de crédito: %.2f", precioTarjCredAerolineas);
+						printf("Aerolï¿½neas: %.2f", y);
+						printf("\na) Precio con tarjeta de dï¿½bito: %.2f", precioTarjDebAerolineas);
+						printf("\nb) Precio con tarjeta de crï¿½dito: %.2f", precioTarjCredAerolineas);
 						printf("\nc) Precio pagando con bitcoin : %f", precioBTCaerolineas);
 						printf("\nd) Precio unitario: %.2f", precioUnitarioAerolineas);
 
 						printf("\nLatam: %.2f", z);
-						printf("\na) Precio con tarjeta de débito: %.2f", precioTarjDebLatam);
-						printf("\nb) Precio con tarjeta de crédito: %.2f", precioTarjCredLatam);
+						printf("\na) Precio con tarjeta de dï¿½bito: %.2f", precioTarjDebLatam);
+						printf("\nb) Precio con tarjeta de crï¿½dito: %.2f", precioTarjCredLatam);
 						printf("\nc) Precio pagando con bitcoin : %f", precioBTClatam);
 						printf("\nd) Precio unitario: %.2f\n", precioUnitarioLatam);
 						printf("\nLa diferencia es: %.2f\n", diferenciaPrecio);
@@ -159,7 +157,7 @@ int main(void) {
 						break;
 
 					case 6:
-						printf("Saliendo del menú\n");
+						printf("Saliendo del menï¿½\n");
 						printf("\n\n\n\n\n");
 						break;
 					default:
