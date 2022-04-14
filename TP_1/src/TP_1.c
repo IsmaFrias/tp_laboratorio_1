@@ -62,12 +62,10 @@ int main(void) {
 					case 3:
 						if (km == 0){
 							printf("Por favor, ingrese un kilometraje antes de calcular los costos\n");
-							system("pause");
 							printf("\n\n\n\n\n");
 						}
 						else if(y == 0 && z == 0){
 							printf("No se introdujo ning�n precio en Aerolineas Arg. y Latam\n");
-							system("pause");
 							printf("\n\n\n\n\n");
 						}
 						else{
@@ -85,7 +83,6 @@ int main(void) {
 
 							printf("Se calcularon todos los costos\n");
 
-							system("pause");
 						}
 						printf("\n\n\n\n\n");
 						break;
@@ -93,12 +90,10 @@ int main(void) {
 					case 4:
 						if (km == 0 && y == 0 && z == 0){
 							printf("No se introdujo ning�n valor\n");
-							system("pause");
 							printf("\n\n\n\n\n");
 						}
 						else if(precioTarjDebAerolineas == 0){
 							printf("\nPor favor calcule los costos antes de informar los resultados\n");
-							system("pause");
 							printf("\n\n\n\n\n");
 						}
 						else{
@@ -115,7 +110,6 @@ int main(void) {
 						printf("\nd) Precio unitario: %.2f\n", precioUnitarioLatam);
 						printf("\nLa diferencia es: %.2f\n", diferenciaPrecio);
 
-						system("pause");
 						printf("\n\n\n\n\n");
 						}
 						break;
@@ -152,7 +146,6 @@ int main(void) {
 						printf("\nd) Precio unitario: %.2f\n", precioUnitarioLatam);
 						printf("\nLa diferencia es: %.2f\n", diferenciaPrecio);
 
-						system("pause");
 						printf("\n\n\n\n\n");
 						break;
 
@@ -162,7 +155,6 @@ int main(void) {
 						break;
 					default:
 						printf("Por favor ingrese una opcion valida");
-						system("pause");
 				}
 
 
