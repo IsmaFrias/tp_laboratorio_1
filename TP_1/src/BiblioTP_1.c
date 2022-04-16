@@ -8,6 +8,11 @@ float pedirUnNumero(char mensaje[])
     float numero;
     printf("%s", mensaje);
     scanf("%f", &numero);
+		while(numero < 0){
+    		printf("%s", mensaje);
+    		scanf("%f", &numero);
+    	}
+
 
     return numero;
 }
